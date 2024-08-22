@@ -12,12 +12,35 @@
 
 <body>
 
+  <h1>Palindroma</h1>
+
   <form onsubmit="return isPalindrome()">
     <input type="text" placeholder="Inserire una parola" id="parola" required>
     <button type="submit">Verifica</button>
   </form>
   <p id="result"></p>
 
+
+  <h1>Pari e Dispari</h1>
+
+  <form id="gameForm">
+    <label>
+      Scegli:
+      <select id="scelta" required>
+        <option value="pari">Pari</option>
+        <option value="dispari">Dispari</option>
+      </select>
+    </label>
+
+    <label>
+      Inserisci un numero da 1 a 5:
+      <input type="number" id="userNumber" min="1" max="5" required>
+    </label>
+
+    <button type="submit">Gioca</button>
+  </form>
+
+  <p id="result"></p>
 </body>
 
 </html>
