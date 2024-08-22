@@ -6,13 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pali e Dispari</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/functions.js"></script>
+  <script src="js/functions.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-
+  <form onsubmit="return isPalindrome()">
+    <input type="text" placeholder="Inserire una parola" id="parola" required>
+    <button type="submit">Verifica</button>
+  </form>
+  <p id="result"></p>
 
 </body>
 
